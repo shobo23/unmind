@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* colors */
+:root {
+  --light: #f2ede3;
+  --white: #ffffff;
+  --green: #283e00;
+  --green-text: #ceff78;
+  --blue: #001636;
+  --blue-text: #baf2ff;
+  --black: #000;
+  --yellow: #ffe351;
+  --brown: #2d150d;
+  --brown-hover: #573428;
+  --light-text: #5f4b43;
+}
+body {
+  background-color: var(--light);
+}
+.hero {
+  background-color: var(--light);
+  padding-bottom: 80px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 50px 0px 50px;
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  position: sticky;
+  top: 20px;
+  left: 0;
+  z-index: 50;
+}
+header .logo a {
+  font-family: __interVariable_299230, __interVariable_Fallback_299230, Georgia,
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  color: var(--brown);
+  font-size: 30px;
+  font-weight: 600;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+header nav ul li {
+  gap: 2px;
+}
+header nav ul li a,
+.signIn-btn a,
+.logo a {
+  text-decoration: none;
+  color: var(--brown);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.signIn-btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.signIn-btn button {
+  background-color: var(--yellow);
+  color: var(--brown);
+  font-size: 14px;
+  border: none;
+  padding: 8px;
+  font-weight: 400;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+}
+.hero-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  margin: 50px 0px;
+  text-align: center;
+}
+.hero-text-container .bigtext h1 {
+  color: var(--brown);
+  font-size: 100px;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 95px;
+}
+.hero-text-container p {
+  font-family: __interVariable_299230, __interVariable_Fallback_299230, Georgia,
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 20px;
+  font-weight: 450;
+  width: 570px;
+  color: var(--light-text);
+}
+.hero-text-container button {
+  background-color: var(--brown);
+  color: var(--light);
+  font-size: 16px;
+  border: none;
+  padding: 12px 10px;
+  font-weight: 500;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+}
+.hero-text-container button:hover {
+  background-color: var(--brown-hover);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.scroll-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+}
+.image-holder {
+  width: 700px;
+  height: 200px;
+}
+.image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.trusted-companies {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px;
+}
+.trusted-companies .text{
+  color: var(--brown);
+  font-family: __interVariable_299230, __interVariable_Fallback_299230, Georgia,
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 18px;
+}
+.trusted-companies .logos .firstline,
+.trusted-companies .logos .secondline {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px;
+}
